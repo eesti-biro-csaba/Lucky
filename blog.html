@@ -32,14 +32,97 @@
             </div>
         </div>
     </nav>
+    <div class="banner"></div>
+
 
     <div class="container">
-        <div class="row construction">
-
+        <div class="row my-5">
+            <div class="col-12">
+                <h1>Lucky - Blog</h1>
+            </div>
+        </div>
+        <div class="row my-5">
+            <div class="col-md-4">
+                <img src="./img/blog/reggel.png" alt="" class="img-fluid blog-img">
+            </div>
+            <div class="col-md-8">
+                <h2>Reggeli ráhangolódás</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis quia accusamus omnis. Autem
+                    excepturi, fugiat aut animi sequi quas dicta asperiores dolores, est totam voluptatibus sint
+                    officiis reiciendis natus adipisci.</p>
+                <a href="cikkek/reggel.html" class="btn btn-outline-success">Elolvasom</a>                    
+            </div>
+        </div>
+        <div class="row my-5">
+            <div class="col-md-8">
+                <h2>10 legismertebb kávézó Budapesten</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis quia accusamus omnis. Autem
+                    excepturi, fugiat aut animi sequi quas dicta asperiores dolores, est totam voluptatibus sint
+                    officiis reiciendis natus adipisci.</p>
+                <a href="cikkek/reggel.html" class="btn btn-outline-success">Elolvasom</a>                    
+            </div>
+            <div class="col-md-4">
+                <img src="./img/blog/kavezo.png" alt="" class="img-fluid blog-img">
+            </div>
+            
         </div>
     </div>
 
-    <footer class="container-fluid  fixed-bottom">
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="regModal" tabindex="-1" aria-labelledby="Regisztráció" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="Regisztráció">Regisztráció</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <img src="./img/under-construction-min.jpg" alt="Fejlesztés alatt" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Bezárás</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="Bejelentkezés" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="Bejelentkezés">Regisztráció</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <img src="./img/under-construction-min.jpg" alt="Fejlesztés alatt" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Bezárás</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <footer class="container-fluid">
         <div class="row">
             <div class="col-sm-6 col-lg-4 offset-lg-1">
                 <h2>Kapcsolat</h2>
@@ -57,7 +140,8 @@
                         <input type="text" class="form-control" placeholder="user@abc.hu" aria-label="E-mail"
                             aria-describedby="button-addon2" id="email">
                         <div class="input-group-append">
-                            <button class="btn btn-success" type="button" id="button-addon2" onclick="feliratkozás()">Feliratkozom</button>
+                            <button class="btn btn-success" type="button" id="button-addon2"
+                                onclick="feliratkozás()">Feliratkozom</button>
                         </div>
                     </div>
                 </form>
@@ -77,12 +161,12 @@
         crossorigin="anonymous"></script>
 
     <script>
-        function feliratkozás(){
-            let email=document.getElementById('email').value;
-            if (email == ""){
+        function feliratkozás() {
+            let email = document.getElementById('email').value;
+            if (email == "") {
                 alert("Kérem adja meg az email címét!");
             }
-            else{
+            else {
                 alert("Sikeres feliratkozás!");
             }
         }

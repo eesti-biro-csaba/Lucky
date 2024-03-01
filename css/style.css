@@ -112,3 +112,8 @@ footer li>img {
     background-position: center center;
     background-size: cover;
 }
+
+.blog-img {
+    border: 1px solid #1f5b25;
+    border-radius: 4px;
+}
