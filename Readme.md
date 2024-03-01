@@ -21,3 +21,9 @@
 - https://validator.w3.org W3C HTML validátor
 - https://jigsaw.w3.org/css-validator/ W3C CSS validátor
 - https://imagecompressor.com/ kép tömörítéséhez
+
+
+# Ha nem frissül a github.io
+    akkor próbáld így:
+        https://username.github.io/awesome-repo/?version=f36af92 
+    ahol az f36af92 helyett írd be az utolsó commit melleti számot
