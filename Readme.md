@@ -20,4 +20,4 @@
 - https://github.com Verzió kezelés
 - https://validator.w3.org W3C HTML validátor
 - https://jigsaw.w3.org/css-validator/ W3C CSS validátor
-- https://imagecomressor.com/ kép tömörítéséhez
+- https://imagecompressor.com/ kép tömörítéséhez
