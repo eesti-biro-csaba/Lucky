@@ -27,8 +27,8 @@
                 <a class="nav-link" href="blog.html">Blog</a>
             </div>
             <div class="navbar-nav ml-auto">
-                <a class="nav-link" href="regisztráció.html">Regisztráció</a>
-                <a class="nav-link" href="login.html">Bejelentkezés</a>
+                <a class="nav-link" href="#" data-toggle="modal" data-target="#regModal">Regisztráció</a>
+                <a class="nav-link" href="#" data-toggle="modal" data-target="#loginModal">Bejelentkezés</a>
             </div>
         </div>
     </nav>
@@ -47,36 +47,267 @@
 
 
     <div class="container">
-        <div class="row">
-            <div class="col-lg-4">
-                <div class="kave">
-                    <img src="./img/sunflower.svg" id="napiajánlat" alt="">
-                    <img src="./img/sutemenyek/tiramisu_k.png" alt="tiramisu" class="img-fluid">
-                    <h2>Tiramisu</h2>
+        <div class="row row-cols-1 row-cols-md-3">
+            <div class="col mb-4">
+                <a href="#" data-toggle="modal" data-target="#tiramisuModal">
+                    <div class="card">
+                        <img src="./img/sunflower.svg" id="napiajánlat" alt="" title="napiajánlat">
+                        <img src="./img/sutemenyek/tiramisu_k.png" alt="tiramisu" title="Tiramisu" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Tiramisu</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col mb-4">
+                <a href="#" data-toggle="modal" data-target="#kavesbrownieModal">
+                    <div class="card">
+                        <img src="./img/sutemenyek/kavesbrownie_k.png" alt="kávés brownie" title="kávés brownie" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Kávés Brownie</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col mb-4">
+                <a href="#" data-toggle="modal" data-target="#kavessutiModal">
+                    <div class="card">
+                        <img src="./img/sutemenyek/kavessuti_k.png" alt="kavessuti" title="kavessuti" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Kávés Süti</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col mb-4">
+                <a href="#" data-toggle="modal" data-target="#kavescroissantModal">
+                    <div class="card">
+                        <img src="./img/sutemenyek/kavescroissant_k.png" alt="Kávés Croissant" title="Kávés Croissant" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Kávés Croissant</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col mb-4">
+                <a href="#" data-toggle="modal" data-target="#kavesmuffinModal">
+                    <div class="card">
+                        <img src="./img/sutemenyek/kavesmuffin_k.png" alt="kávés muffin" title="Tiramisu" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Kávés Muffin</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="tiramisuModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Tiramisu</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <img src="./img/sutemenyek/tiramisu_k.png" alt="Tiramisu" class="img-fluid">
+                            </div>
+                            <div class="col-sm-8">
+                                <h2>Tiramisu</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est repellat sequi molestiae
+                                    ad iste. Commodi temporibus ut harum repellendus? Fugit, esse. Necessitatibus sit
+                                    rem laboriosam aliquam porro dolorum officiis asperiores?</p>
+                                <p>Voluptatum, incidunt ipsum. Repudiandae dolore recusandae maiores sapiente quas
+                                    porro, atque dolor necessitatibus inventore expedita consequatur corrupti reiciendis
+                                    dolorum? Non repellendus quisquam illum cumque et nisi iusto! Quae, maxime nemo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Bezárás</button>
                 </div>
             </div>
-            <div class="col-lg-4">
-                <div class="kave">
-                    <img src="./img/sutemenyek/kavesbrownie_k.png" alt="kávés brownie" class="img-fluid">
-                    <h2>Kávés Brownie</h2>
+        </div>
+    </div>
+    <div class="modal fade" id="kavesbrownieModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">KávésBrownie</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <img src="./img/sutemenyek/kavesbrownie_k.png" alt="Kávés Brownie" class="img-fluid">
+                            </div>
+                            <div class="col-sm-8">
+                                <h2>KávésBrownie</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est repellat sequi molestiae
+                                    ad iste. Commodi temporibus ut harum repellendus? Fugit, esse. Necessitatibus sit
+                                    rem laboriosam aliquam porro dolorum officiis asperiores?</p>
+                                <p>Voluptatum, incidunt ipsum. Repudiandae dolore recusandae maiores sapiente quas
+                                    porro, atque dolor necessitatibus inventore expedita consequatur corrupti reiciendis
+                                    dolorum? Non repellendus quisquam illum cumque et nisi iusto! Quae, maxime nemo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Bezárás</button>
                 </div>
             </div>
-            <div class="col-lg-4">
-                <div class="kave">
-                    <img src="./img/sutemenyek/kavessuti_k.png" alt="kávés süti" class="img-fluid">
-                    <h2>Kávés Süti</h2>
+        </div>
+    </div>
+    <div class="modal fade" id="kavessutiModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">KávésSüti</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <img src="./img/sutemenyek/kavessuti_k.png" alt="KávésSüti" class="img-fluid">
+                            </div>
+                            <div class="col-sm-8">
+                                <h2>KávésSüti</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est repellat sequi molestiae
+                                    ad iste. Commodi temporibus ut harum repellendus? Fugit, esse. Necessitatibus sit
+                                    rem laboriosam aliquam porro dolorum officiis asperiores?</p>
+                                <p>Voluptatum, incidunt ipsum. Repudiandae dolore recusandae maiores sapiente quas
+                                    porro, atque dolor necessitatibus inventore expedita consequatur corrupti reiciendis
+                                    dolorum? Non repellendus quisquam illum cumque et nisi iusto! Quae, maxime nemo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Bezárás</button>
                 </div>
             </div>
-            <div class="col-lg-4">
-                <div class="kave">
-                    <img src="./img/sutemenyek/kavescroissant_k.png" alt="kávés croissant" class="img-fluid">
-                    <h2>Kávés Croissant</h2>
+        </div>
+    </div>
+    <div class="modal fade" id="kavescroissantModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Kávés Croissant</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <img src="./img/sutemenyek/kavescroissant_k.png" alt="Cappuccino" class="img-fluid">
+                            </div>
+                            <div class="col-sm-8">
+                                <h2>Kávés Croissant</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est repellat sequi molestiae
+                                    ad iste. Commodi temporibus ut harum repellendus? Fugit, esse. Necessitatibus sit
+                                    rem laboriosam aliquam porro dolorum officiis asperiores?</p>
+                                <p>Voluptatum, incidunt ipsum. Repudiandae dolore recusandae maiores sapiente quas
+                                    porro, atque dolor necessitatibus inventore expedita consequatur corrupti reiciendis
+                                    dolorum? Non repellendus quisquam illum cumque et nisi iusto! Quae, maxime nemo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Bezárás</button>
                 </div>
             </div>
-            <div class="col-lg-4">
-                <div class="kave">
-                    <img src="./img/sutemenyek/kavesmuffin_k.png" alt="kávés muffin" class="img-fluid">
-                    <h2>Kávés Muffin</h2>
+        </div>
+    </div>
+    <div class="modal fade" id="kavesmuffinModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Kávés Muffin</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <img src="./img/sutemenyek/kavesmuffin_k.png" alt="Kávés Muffin" class="img-fluid">
+                            </div>
+                            <div class="col-sm-8">
+                                <h2>Kávés Muffin</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est repellat sequi molestiae
+                                    ad iste. Commodi temporibus ut harum repellendus? Fugit, esse. Necessitatibus sit
+                                    rem laboriosam aliquam porro dolorum officiis asperiores?</p>
+                                <p>Voluptatum, incidunt ipsum. Repudiandae dolore recusandae maiores sapiente quas
+                                    porro, atque dolor necessitatibus inventore expedita consequatur corrupti reiciendis
+                                    dolorum? Non repellendus quisquam illum cumque et nisi iusto! Quae, maxime nemo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Bezárás</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="regModal" tabindex="-1" aria-labelledby="Regisztráció" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="Regisztráció">Regisztráció</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <img src="./img/under-construction-min.jpg" alt="Fejlesztés alatt" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Bezárás</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="Bejelentkezés" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="Bejelentkezés">Regisztráció</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <img src="./img/under-construction-min.jpg" alt="Fejlesztés alatt" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Bezárás</button>
                 </div>
             </div>
         </div>
