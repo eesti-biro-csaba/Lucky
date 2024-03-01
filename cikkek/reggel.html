@@ -1,11 +1,198 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="hu">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luky - Reggel</title>
+    <title>Lucky - Reggeli ráhangolódás</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <a class="navbar-brand logo" href="../index.html">Lucky
+            <img src="../img/clover.svg" alt="clover"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link" href="../index.html">Főoldal</a>
+                <a class="nav-link" href="../kávéfajták.html">Kávéfajták</a>
+                <a class="nav-link" href="../sütemények.html">Sütemények</a>
+                <a class="nav-link active" href="../blog.html">Blog <span class="sr-only">(current)</span></a>
+            </div>
+            <div class="navbar-nav ml-auto">
+                <a class="nav-link" href="#" data-toggle="modal" data-target="#regModal">Regisztráció</a>
+                <a class="nav-link" href="#" data-toggle="modal" data-target="#loginModal">Bejelentkezés</a>
+            </div>
+        </div>
+    </nav>
+    <div class="banner"></div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <article>
+                    <div class="row my-5">
+                        <div class="col-md-4 offset-md-1">
+                            <img src="../img/blog/reggel.png" alt="" class="img-fluid blog-img">
+                        </div>
+                        <div class="col-md-7 align-self-center">
+                            <h1>Reggeli ráhangolódás</h1>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="row my-5">
+                            <div class="col-12">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam tempora quaerat est vel! Dolor, dolorum nostrum, libero adipisci aspernatur minima suscipit velit sequi et tempora consequuntur illum ex cumque exercitationem.</p>
+                                <p>Saepe repellat, optio odio placeat porro fugit cum illum aspernatur natus in suscipit eius! Odit delectus odio corrupti, ipsum cumque ullam illum nam officia optio voluptas rem aliquam quam. Earum.</p>
+                                <p>Accusantium veritatis magnam quam ullam, enim laboriosam voluptatum omnis culpa odit, tenetur ex iusto voluptas, hic saepe veniam. Quas, maiores! Magni similique ipsa tenetur vero amet? Ex possimus distinctio blanditiis.</p>
+                                <p>Rem, quas maxime voluptates esse commodi vel suscipit nulla iusto expedita officia tempore, dolor magni minus natus! Quae, id aperiam alias nisi cumque ea! Molestiae sapiente cupiditate nesciunt accusantium ipsa?</p>
+                                <p>Quam sequi cupiditate vel similique reiciendis incidunt laudantium adipisci sit. Quae a id voluptates labore, laboriosam deserunt fuga, alias, commodi assumenda debitis quam. Culpa, excepturi quam expedita numquam doloribus provident.</p>
+                                <p class="szerzo">Szerző: Lucky</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <div>
+                    <div class="row">
+                        <div class="col-12">
+                            <h2>Hozzászólások</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-11 offset-1">
+                            <p><span class="badge badge-success">Anna</span>
+                                Mennyire igaz, amit írtál :)          
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-5">
+                <aside class="box">
+                    <h2>Évek szerint</h2>
+                    <ul>
+                        <li>2020</li>
+                        <li>2021</li>
+                    </ul>
+                    
+                </aside>
+            </div>
+        </div>
+    </div>
     
+    
+
+
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="regModal" tabindex="-1" aria-labelledby="Regisztráció" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="Regisztráció">Regisztráció</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row  construction_sm">
+                            <img src="./img/under-construction-min.jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Bezárás</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="Bejelentkezés" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="Bejelentkezés">Regisztráció</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row  construction_sm">
+                            <img src="./img/under-construction-min.jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Bezárás</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="col-sm-6 col-lg-4 offset-lg-1">
+                <h2>Kapcsolat</h2>
+                <ul>
+                    <li><img src="./img/letter.svg" alt="">Lucky Kávézó</li>
+                    <li><img src="./img/email.svg" alt="">lucky@kavezo.hu</li>
+                    <li><img src="./img/telephone.svg" alt="">+36-1-555-55-55</li>
+                </ul>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <h2>Kávé Magazin</h2>
+                <p>iratkozzon fel a kávé magazinunkra!</p>
+                <form>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="user@abc.hu" aria-label="E-mail"
+                            aria-describedby="button-addon2" id="email">
+                        <div class="input-group-append">
+                            <button class="btn btn-success" type="button" id="button-addon2"
+                                onclick="feliratkozás()">Feliratkozom</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+
+    <script>
+        function feliratkozás() {
+            let email = document.getElementById('email').value;
+            if (email == "") {
+                alert("Kérem adja meg az email címét!");
+            }
+            else {
+                alert("Sikeres feliratkozás!");
+            }
+        }
+    </script>
 </body>
+
 </html>

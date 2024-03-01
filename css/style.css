@@ -108,12 +108,29 @@ footer li>img {
 
 .construction_sm {
     background-image: url(../img/under-construction-min.jpg);
-    height: 40vh;
+    height: 80vh;
     background-position: center center;
-    background-size: cover;
+    background-size:auto;
 }
 
 .blog-img {
     border: 1px solid #1f5b25;
     border-radius: 4px;
+}
+
+.szerzo {
+    font-size: 1.3rem;
+    font-style: italic;
+    text-align: right;
+}
+
+.box {
+    border: 1px solid #1f5b25;
+}
+
+.box h2 {
+    font-size: 1.5rem;
+    background-color: #1f5b25;
+    color: #fff;
+    padding: 0.5rem;
 }
