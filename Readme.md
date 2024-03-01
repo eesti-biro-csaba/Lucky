@@ -1,5 +1,5 @@
 # Lucky kávézó
-[kávéfajták](https://eesti-biro-csaba.github.io/Lucky/)
+[Lucky kávézó](https://eesti-biro-csaba.github.io/Lucky/)
 
 # képek és ikonok letöltáse:
 - Pixabay: https://pixabay.com/hu/
