@@ -4,10 +4,14 @@ body {
     background-color: #fbeedb;
 }
 
+
 h1{
     font-family: 'Fredericka the Great', cursive;
-    color: #1f5b25;
     text-align: center;
+}
+
+h1:not(#home h1) {
+    color: #1f5b25;
 }
 
 .navbar {
@@ -57,9 +61,19 @@ h1{
     width: 40px;
     right: 40px;
     top: 20px;
-
 }
- 
+
+#home {
+    background-image: url(../img/homebg.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size:cover;
+}
+
+#home .intro{
+    color: #fff;
+    height: 100vh;
+}
 footer {
     background-color: #1f5b25;
     color: #fff;
