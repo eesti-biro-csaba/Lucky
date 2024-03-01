@@ -40,7 +40,7 @@ h5 {
 }
 
 .banner {
-    background-image: url(../img/banner.jpg);
+    background-image: url(../img/banner-min.jpg);
     height: 400px;
     background-position: center center;
     background-size: cover;
@@ -70,7 +70,7 @@ a:hover{
 }
 
 #home {
-    background-image: url(../img/homebg.jpg);
+    background-image: url(../img/homebg-min.jpg);
     background-attachment: fixed;
     background-position: center center;
     background-size:cover;
