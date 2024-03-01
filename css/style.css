@@ -10,25 +10,16 @@ h1{
     text-align: center;
 }
 
-nav {
+.navbar {
     background-color: #1f5b25;
-    padding: 15px;
-    position: fixed;
+    
 }
 
-nav a {
-    color: #fff;
-    margin-left: 15px;
-}
 
-nav a:hover {
+.navbar a:hover {
     color: #fff;
     text-decoration: none;
     text-shadow: 1px 1px 3px #dd0303;
-}
-
-nav a.logo {
-    font-size: 1.5em;
 }
 
 .logo img {
